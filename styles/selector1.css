@@ -1,0 +1,42 @@
+/* 선택자 {속성:값;} */
+main > h1 {
+    background-color: blue; 
+    /* 배경색 */
+    color: yellow;
+    /* 글자색상 */
+    /* font-family: '궁서'; */
+    font-family:'pretendard','Noto Serif','마루 부리','궁서';
+    /* 글꼴명이 공백 또는 한글일땐 따옴표 묶기 */
+    /* 글꼴명 2개 이상 작성하기(대표글꼴, 후보글꼴) */
+    /* 맑은 고딕, 궁서, 바탕, 굴림 등 컴퓨터 기본 글꼴 외 설치글꼴은 웹주소로 따로 연결해야한다. */
+}
+main > p {
+    background-color: wheat;
+    color: brown;
+    font-family: '마루 부리','pretendard';
+}
+main > .news {
+    background-color: red;
+}
+main > .news > li {
+    color: white;
+    font-size: 1em;
+    /* 웹 기본크기 16px */
+}
+main > .news > .font2 {
+    font-size: 2.25em;
+}
+main > #blog {
+    background-color: brown;
+}
+main > #blog > h2 {
+    font-size: 0.875em;
+    color: white;
+}
+main > #blog > p {
+    background-color: yellow;
+    font-size: 1.125em;
+}
+main > #blog > h2+p {
+    font-size: 0.625em;
+}
