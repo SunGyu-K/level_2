@@ -1,0 +1,121 @@
+/* inline_bloack.css */
+body {background-color: #F5F5F5; height: 200vh;}
+/* vh = viewpory height 약자 : 사용자가 보는 화면 상대적 높이값 */
+#muji {
+    width: 402px;
+    height: max-content;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+#muji > .ad {
+    background-image:url(../images/muji_ad_bg.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-color: gray;/* 배경색상은 항상 배경이미지 아래로 깔림 */
+    background-position:center 30%;/* x y 순서로 작성 */
+    background-attachment: fixed;
+    /* attchment - 대부분 사용이 fixed , scroll / fixed는 해당 이미지는 고정시킨다. */
+    /* ./ 경로 의미 : 현재 작성 파일 위치에서부터 경로를 시작한다. */
+    /* ../ 경로 의미 : 현재 작성 위치에서 한번 위로 나가서 경로를 시작한다. */
+    width: 100%;/* 피그마에서 w 채우기설정 시 (부모와 너비 같음) */
+    /* max-content는 100%와 다름. max-content는 자식의 최대크기와 같다는 뜻 */
+    height: 500px;/* 피그마에서 h고정값 직접 입력시 (px 고정) */
+}
+#muji > .ad > h2 {
+    font-size:1.38em;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+#muji > .ad > p {
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color:#000
+}
+#muji > .ad > h2 + p {}
+#muji > .ad > .ad_num {
+    background-color:rgba(0,0,0,5)/* 0.5 == 50% */
+    width:60px; line-height:25px;
+    color:#fff;
+    /* 수평정렬 text-align */
+    text-align:center;
+    /* 수직정렬 line-height / align-items(추후 배울것) */
+    /* line-height 행간(글자가 1~2줄 이상일때), (고정높이가 있는 수직 중앙 정렬) */
+
+}
+#muji > .ad > .ad_num > .current {
+    color:#fff;
+}
+#muji > .ad > .ad_num > .total {
+    color:#fff;
+}
+#muji {}
+#muji > .menu_list {
+    display:flex;
+    /* flex 설정을 정렬하고 싶은 자식의 부모에게 명령하면 자식들이 옆으로 가는 효과 */
+    padding: 16px;
+}
+#muji > .menu_list > .menu {
+    /* display:inline-block; */
+    background-color: #F5F5F5;
+    display:flex; align-items:center;
+    width:max-content;
+    margin:0 12px;/* 여성복 청소 사이만 들어간게 아닌 침구 오른쪽까지 margin이 적용된 상태 */
+    padding:6px 12px 6px 6px;/* menu(부모)와 자식(thum,h3)사이 */
+    border-radius :20px;/* 피그마 모서리 변경 */
+    border:1px solid rgba(0,0,0,0,3);
+}
+#muji > .menu_list > .menu > .thum {
+    width: 20px; height: 20px; border-radius:10px;
+    /* 피그마의 넘친 콘텐츠 숨기기(부모 안에서 자식이 벗어났을때 부모안에서만 보이기) */
+    overflow:hidden;
+    /* .thum클래스를 가진 p와 형제 h3가 블록태그이기 때문에 수직으로 나열됨.
+    그 문제를 해결하기 위해 크기와 여백을 인식하고 옆으로 정렬하는 inline-black적용*/
+    display:inline-block;
+    margin:0 8px 0 0;
+}
+#muji > .menu_list > .menu > .thum > img {
+    width:100%;
+}
+#muji > .menu_list > .menu > h3 {
+    display:inline-block;
+}
+
+/* muji_v2 연습용 */
+#muji_v2 {
+    width: 402px;
+    height: 872px;
+    background-color: beige;
+    border: 1px solid #000;
+}
+#muji_v2 > .ad {
+    width: 402px;
+    height: 872px;
+    background-image: url(../images/muji_ad_bg_v2.jpg);
+    background-size: center;
+    background-repeat: no-repeat;
+    background-color: rgb(223, 223, 223);
+    background-position:10 , top
+}
+#muji_v2 > .menu {
+    margin:10px;
+    padding:20px;
+}
+#muji_v2 > .menu > .menu_list {
+    background-color: aqua;
+    display: flex;
+    padding: 10px;
+    width:max-content;
+    display: inline-block;
+    align-items:center;
+}
+#muji_v2 > .menu > .menu_list > .btn {
+    width: 20px; height: 20px;
+    overflow:hidden;
+    display:inline-block;
+    margin:10px;
+}
+#muji_v2 > .menu > .menu_list > h3 {
+    display:inline-block;
+}

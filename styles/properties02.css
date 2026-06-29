@@ -1,0 +1,36 @@
+/* properties02 */
+.movie02 {
+    width:600px;
+    height:505px;
+    background-color:#CD8D5F;
+    border: 1px solid #000;
+}
+.movie02 > h1 {
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing:-0.02em;/* -2% */
+    line-height:150%;
+    padding: 40px 0 0 20px;
+    margin: 0 0 15px 0;
+    font-family: Pretendard, 고딕체;
+    letter-spacing:-0.02em;
+}
+.movie02 > .top_story {
+    margin: 0 0 40px 20px;
+}
+.movie02 > .top_story > .main1 {
+    font-size:1.2em;
+    font-weight: 600;
+    line-height:150%;
+    letter-spacing:-0.02em;
+}
+.movie02 > .top_story > .main2 {
+    font-size:1.2em;
+    font-weight: 600;
+    line-height:150%;
+    letter-spacing:-0.02em;
+}
+.mivie02 > .poster_1 > .moive_p {
+    
+}
+.mivie02 > .poster_1 > .story_2 {}

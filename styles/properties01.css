@@ -1,0 +1,48 @@
+/* properties01.css */
+.movie {
+    width:600px;
+    height:max-content;/* hug(내용에 맞춤) */
+    background-color: #FFC8C0;
+    border:1px solid #000;
+    border-radius:25px;
+    padding:40px 0 40px 20px;
+}
+.movie > h1 {
+    font-family:'Noto Sans KR', '맑은고딕';
+    font-weight: 500;
+    font-size:1.5em;
+    letter-spacing:-0.02em;/* -2% */
+    line-height:120%;
+    padding:40px 0 0 20px;
+    margin:0 0 40px 0;
+}/* h1과 contents_g 형제를 떨어뜨리기 위한 간격값 입력 */
+.movie > .contents_g{
+    margin:0 0 40px 0;
+}
+.movie > .contents_g > .slogan {
+    font-family:'Noto Sans KR', '맑은고딕';
+    font-weight: 500;
+    font-size:1.5em;
+    /* rest의 글자크기(16)와 동일하므로 font-size 생략가능 */
+    letter-spacing:-0.02em;/* -2% */
+    line-height:120%;
+    padding:0 0 0 20px;
+    margin: 0 0 15px 0;
+}
+.movie > .contents_g > .story {
+    font-family:'Noto Sans KR', '맑은고딕';
+    font-weight:300;
+    font-size:0.875em;
+    line-height:1.5;
+    letter-spacing:-0.02em;
+    padding:0 0 0 20px;
+}
+.movie > .poster {
+    margin: 0 0 40px 0;
+}
+.movie > .poster > .img {}
+.movie > .poster > .story2 {
+    font-family:'Noto Sans KR', '맑은고딕';
+    line-height: 1.7;
+    color:#222;
+}
